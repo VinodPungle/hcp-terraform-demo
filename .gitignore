@@ -1,9 +1,27 @@
-# Terraform directories & state
+# Local Terraform directories
 .terraform/
-.terraform.lock.hcl    # commit this only if you want to pin provider versions
+.terraform.tfstate.lock.info
+
+# State files - never commit these
 *.tfstate
 *.tfstate.*
-*.tfvars               # often contains secrets
+*.tfstate.backup
+
+# Crash logs
 crash.log
+crash.*.log
+
+# Variable files with secrets
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Override files
 override.tf
 override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
