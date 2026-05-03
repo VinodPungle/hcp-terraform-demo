@@ -1,0 +1,9 @@
+# Terraform directories & state
+.terraform/
+.terraform.lock.hcl    # commit this only if you want to pin provider versions
+*.tfstate
+*.tfstate.*
+*.tfvars               # often contains secrets
+crash.log
+override.tf
+override.tf.json
